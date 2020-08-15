@@ -1,8 +1,9 @@
 ---
 home: true
-heroImage: https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
+heroImage: "/uploads/2d7ee2f4-69c3-4cdb-ae11-b168d57344b2.jpeg"
 tagline: Software Topics
 actionText: Read →
-actionLink: /software/
+actionLink: "/software/"
 footer: Made by  with ❤️
+
 ---
