@@ -16,3 +16,5 @@ fields:
     min: 
     max: 
   description: Blocksfm
+pages:
+- docs/software/Testforestio.md
