@@ -8,13 +8,5 @@ fields:
     required: false
   label: Text
   description: Fieldtext
-- name: blocksfm
-  type: blocks
-  label: Blocks
-  template_types: []
-  config:
-    min: 
-    max: 
-  description: Blocksfm
 pages:
 - docs/software/Testforestio.md
