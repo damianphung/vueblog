@@ -5,9 +5,8 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: ''
+  path: README.md
   label: Root
-  match: "**/*"
 - type: directory
   path: docs
   label: Docs
