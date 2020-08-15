@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'Damian Phung',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -34,26 +34,23 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'Software Topics',
+        link: '/software/',
       },
       {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'Github',
+        link: 'https://github.com/damianphung'
       }
     ],
     sidebar: {
-      '/guide/': [
+      '/software/': [
         {
-          title: 'Guide',
-          collapsable: false,
+          title: 'Software',
+          collapsable: true,
           children: [
             '',
             'using-vue',
+            'topic2'
           ]
         }
       ],
