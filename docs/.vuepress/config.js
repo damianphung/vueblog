@@ -48,7 +48,8 @@ module.exports = {
         text: 'Topics',
         items: [
           { text: 'Software Engineering'    , link: '/software/'},
-          { text: 'Machine Learning'        , link: '/machine-learning/'}
+          { text: 'Machine Learning'        , link: '/machine-learning/'},
+          { text: 'No Code'                 , link: '/nocode/'}
         ] 
       },
       {
@@ -59,7 +60,8 @@ module.exports = {
     sidebar: [
       '/',
       '/software/',
-      '/machine-learning/'
+      '/machine-learning/',
+      '/nocode/'
     ]  
   },
 

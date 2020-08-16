@@ -18,7 +18,7 @@ export default {
     computed: {
         posts() {
             return this.$site.pages
-                .filter(x => ( x.path.startsWith('/software/') || x.path.startsWith('/machine-learning/') )   && !x.frontmatter.blog_index)
+                .filter(x => ( x.path.startsWith('/software/') || x.path.startsWith('/machine-learning/') || x.path.startsWith('/nocode/') )   && !x.frontmatter.blog_index)
                 .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
         }
     }
