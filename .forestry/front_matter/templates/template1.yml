@@ -8,5 +8,3 @@ fields:
     required: false
   label: Text
   description: Fieldtext
-pages:
-- docs/software/Testforestio.md
