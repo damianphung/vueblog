@@ -65,6 +65,24 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    // [
+    //   "vuepress-plugin-mailchimp",
+    //   {
+    //     endpoint: 'https://billyyyyy3320.us4.list-manage.com/subscribe/post?u=4905113ee00d8210c2004e038&amp;id=bd18d40138'
+    //   }
+    // ],
+    // [
+    //   "vuepress-plugin-disqus-comment",
+    //   {
+
+    //   }
+    // ]
+    // See https://flowchart.vuepress.ulivz.com/#install
+    // "flowchart"
+    //
+    // See https://github.com/ntnyq/vuepress-plugin-social-share
+    // 
+
   ]
 }
 
