@@ -1,13 +1,6 @@
 const { description } = require('../../package')
-const glob = require('glob');
-
-let markdownFiles = glob.sync('software/*.md').map( function(f) {
-    if(f ==='software/README.md') return '';
-    else return f.slice(9).slice(0,-3);
-  }
-);
-// console.log(markdownFiles);
-
+const fs = require("fs");
+const path = require("path");
 
 module.exports = {
   /**
@@ -37,6 +30,7 @@ module.exports = {
    */
   themeConfig: {
     // logo: 'assets/img/logo.png',
+    smoothScroll: true,
     editLinks: false,
     // docsDir: '',
     // editLinkText: '',
@@ -45,7 +39,7 @@ module.exports = {
     searchPlaceholder: 'Search...',
     nav: [
       {
-        text: 'Topics',
+        text: 'Blog Topics',
         items: [
           { text: 'Software Engineering'    , link: '/software/'},
           { text: 'Machine Learning'        , link: '/machine-learning/'},
@@ -57,12 +51,12 @@ module.exports = {
         link: 'https://github.com/damianphung'
       }
     ],
-    sidebar: [
-      '/',
-      '/software/',
-      '/machine-learning/',
-      '/nocode/'
-    ]  
+    sidebar: {
+      '/resume/' :  getSideBar("resume", "Resume"),
+      '/software/' :  getSideBar("software", "Software"),
+      '/machine-learning/' : getSideBar("machine-learning", "Machine Learning"),
+      '/nocode/': getSideBar("nocode", "No Code"),
+    },    
   },
 
   /**
@@ -72,4 +66,18 @@ module.exports = {
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
   ]
+}
+
+function getSideBar(folder, title) {
+  const extension = [".md"];
+  const files = fs
+    .readdirSync(path.join(`${__dirname}/../${folder}`))
+    .filter(
+      item =>
+        item.toLowerCase() != "readme.md" &&
+        fs.statSync(path.join(`${__dirname}/../${folder}`, item)).isFile() &&
+        extension.includes(path.extname(item))
+    );
+
+  return [{ title: title,  sidebarDepth: 2, children: ["", ...files] }];
 }

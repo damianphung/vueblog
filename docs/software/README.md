@@ -2,8 +2,15 @@
 blog_index: true
 ---
 
-# Software
 
-General Software Engineering notes...
+# Index
+Handy stuff
 
-<BlogIndex />
+<SoftwareIndex />
+
+
+<!-- This should show all MD files with Infrastructure tag. -->
+
+<!-- <Tags tag="Infrastructure" /> -->
+<!-- <BlogIndex> {{/software/}} </Blogindex> -->
+

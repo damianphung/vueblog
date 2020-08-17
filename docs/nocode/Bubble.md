@@ -5,36 +5,37 @@ description:
     Setting up a data model and CRUD backend with Frontend client. All with no code
 ---
 
-# Bubble 
+## Bubble 
 
-## Data Model
+### Data Model
 
-## Enable API
+### Enable API
 
-## Define Endpoints
+### Define Endpoints
 
-## Swagger definition
+### Swagger definition
 
-## Testing it out 
+### Testing it out 
 
 
-# AppGyver
+## AppGyver
 
-## Creating variables
+### Creating variables
 
-## Installing component dependencies
+### Installing component dependencies
 
-## Authentication
-### Enable Authentication
+### Authentication
+
+#### Enable Authentication
 Select third party authentication
 
 AppGyver creates a new page called Login. We could use this page but let's create our own page instead.
 
-### Configure authentication
+#### Configure authentication
 
 Create our data resources:
 
-#### Signup
+##### Signup
 - Click on ```Data``` tab
 - Select ```Add Data Resource``` then ```REST API direct integration resource```
 - Fill in ```Resource URL``` to the bubble endpoint for ```signup```
@@ -82,6 +83,7 @@ Just like User, we need an authorization token in the HTTP header.
 
 
 
-### Create our pages
-
+### UI Page creation
+xx
 #### Sign up
+xxx

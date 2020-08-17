@@ -1,10 +1,10 @@
 {
   "name": "vuepress-starter",
   "version": "0.0.1",
-  "description": "Random stuff",
+  "description": "Blogging",
   "main": "index.js",
   "authors": {
-    "name": "",
+    "name": "Damian Phung",
     "email": ""
   },
   "repository": "/vuepress-starter",

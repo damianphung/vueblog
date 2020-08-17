@@ -2,8 +2,9 @@
 blog_index: true
 ---
 
-# No Code / Low Code
-
+# Index
 Handy tools to speed up productivity.
 
-<BlogIndex />
+<demo-component/>
+
+<NoCodeIndex />

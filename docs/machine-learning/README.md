@@ -2,8 +2,9 @@
 blog_index: true
 ---
 
-# Machine learning
+### Index
+<!-- # Topics -->
 
 Machine learning notes...
 
-<Blogindex />
+<MachineLearningIndex />
