@@ -8,7 +8,7 @@ description: Getting a backend up really FAST!
 
 ## Authentication using an external auth provider
 
-[Picture](/uploads/hasura-auth-jwt-overview.png)
+![Picture](/uploads/hasura-auth-jwt-overview.png)
 
 First decide on a provider. Both will provide a JSON Web Token (JWT)
 
@@ -49,7 +49,7 @@ Either case you shall extract the user id (i.e x-hasura-user-id)
 
 ## Authentication using webhooks.
 
-[Picture](/uploads/hasura-auth-webhook-overview.png)
+![Picture](/uploads/hasura-auth-webhook-overview.png)
 Here we will go through Hasura for authentication.
 
 One thing to be aware of is instead of using `HASURA_GRAPHQL_JWT_SECRET` environment variable to verify users signing in with the JWT obtained externally.
