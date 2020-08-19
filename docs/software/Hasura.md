@@ -26,7 +26,7 @@ Obtain the `id_token` value and put that in the `Authorization` header when maki
 
 From Hasura.
 
-    The JWT is decoded, the signature is verified, then it is asserted that the requested role of the user (if specified in the request) is in the list of allowed roles. If the desired role is not specified in the request, then the default role is applied. If the authorization passes, then all of the x-hasura-* values in the claim are used for the permissions system.
+> The JWT is decoded, the signature is verified, then it is asserted that the requested role of the user (if specified in the request) is in the list of allowed roles. If the desired role is not specified in the request, then the default role is applied. If the authorization passes, then all of the x-hasura-* values in the claim are used for the permissions system.
 
 ### Forward to external web service
 
