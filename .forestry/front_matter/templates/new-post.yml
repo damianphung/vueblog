@@ -11,3 +11,5 @@ fields:
 - type: text
   name: description
   label: description
+pages:
+- docs/software/window.addeventlistener-and-window.postmessage.md
