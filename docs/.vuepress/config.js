@@ -39,7 +39,7 @@ module.exports = {
     searchPlaceholder: 'Search...',
     nav: [
       {
-        text: 'Blog Topics',
+        text: 'Notes',
         items: [
           { text: 'Software Engineering'    , link: '/software/'},
           { text: 'Machine Learning'        , link: '/machine-learning/'},

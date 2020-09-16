@@ -1,7 +1,7 @@
 {
   "name": "vuepress-starter",
   "version": "0.0.1",
-  "description": "Blogging",
+  "description": "Notes on a growing list of topics below.",
   "main": "index.js",
   "authors": {
     "name": "Damian Phung",
