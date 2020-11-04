@@ -5,7 +5,15 @@ description: Getting a backend up really FAST!
 
 ---
 # Hasura
+Lazy to implement the CRUD operations for your PostGRES database?  
+Just want simple GraphQL APIs with the CRUD implemented out of the box?  
 
+Introducing Hasura!  
+You can point and click the schema definition of your PG database and have the GraphQL endpoints defined for you.  
+All within a web browser.
+
+I will specifically be covering the auth part of Hasura, for my memory in future..
+Hasura delegates the authentication to us, whether we decide to do it externally before calling the GraphQL API's or doing it with a webhook. 
 ## Authentication using an external auth provider
 
 ![Picture](/uploads/hasura-auth-jwt-overview.png)
