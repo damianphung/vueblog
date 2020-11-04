@@ -106,7 +106,8 @@ This is normally the starting point of most tutorials that teach you how to do s
 When creating custom datasets in PyTorch we need to create a ```Dataset``` subclass with ```__len__``` and ```__getitem__``` defined.
 
 The key thing to understand is that the ```__getitem__``` method should return a tuple which contains the sample data and label, given an index.
-i.e: print(MyDataSet[0]) should return (<Tensor>, label), where Tensor is the data sample of the image we downloaded as a PyTorch Tensor.
+
+i.e: print(MyDataSet[0]) should return (Tensor, label), where Tensor is the data sample of the image we downloaded as a PyTorch Tensor.
 
 We also have to create a transform pipeline for each dataset, where each data sample will go through a series of transformations before being forwarded to our network.
 
@@ -185,12 +186,12 @@ print("label index is ", label_idx)
 ### Using ImageFolder
 But of course; Why re-invent the wheel when we can just use ImageFolder instead!
 
-This time we will split our data.
-We create two Datasets. one for train, and another for test.
+This time we will split our data.  
+We create two Datasets. one for train, and another for test.  
 The amount we split the ratio is up to us, but normally I see many people do an 80-20 train-test split. 
 
-We then put it in to a DataLoader class.
-This DataLoader class provides us the ability to do mini-batching!.
+We then put it in to a DataLoader class.  
+This DataLoader class provides us the ability to do mini-batching!.  
 Rather than train our model with one image at a time, we can do it in groups.  
 This is where a GPU comes in handy.
 ```py
@@ -246,6 +247,7 @@ print(labels.shape)
 ```
 
 ```
+# Output
 torch.Size([4, 3, 224, 224])
 torch.Size([4])
 ```
@@ -259,7 +261,7 @@ There are a few ways to split our data. We just used ```Subset``` and provided t
 There's also ```torch.utils.data.random_split``` and ```SubsetRandomSampler``` for example.
 
 ## Transfer Learning
-Ok. Time for the juicy part. Let's get a pre-trained resnet18 model.
+Ok. Time for the juicy part. Let's get a pre-trained resnet18 model.  
 Freeze the weights of our model and modify our fully connected layer to only have 2 outputs, since we only have kittens and puppies.
 
 Run it on a GPU if we have it.
@@ -270,7 +272,6 @@ model = models.resnet18(pretrained = True)
 for param in model.parameters():
     param.requires_grad = False
 
-# Parameters of newly constructed modules have requires_grad=True by default
 num_ftrs = model.fc.in_features
 model.fc = nn.Linear(num_ftrs, 2) # 2 since we only have kittens and puppies as our labels
 model.to(device)
@@ -346,7 +347,6 @@ def imshow(inp, title=None):
     plt.pause(0.001)  # pause a bit so that plots are updated
 
 def test_model(input_model, test_dataloader):
-    was_training = input_model.training
     input_model.eval()
     correct = 0
     total = 0
@@ -368,7 +368,6 @@ def test_model(input_model, test_dataloader):
 
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
-        input_model.train(mode=was_training)
     print('Accuracy of the network on test images: %d %%' % (
         100 * correct / total))    
 
