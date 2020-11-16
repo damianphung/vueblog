@@ -42,8 +42,8 @@ module.exports = {
         text: 'Notes',
         items: [
           { text: 'Software Engineering'    , link: '/software/'},
-          { text: 'Machine Learning'        , link: '/machine-learning/'},
-          { text: 'No Code'                 , link: '/nocode/'}
+          { text: 'Machine Learning'        , link: '/machine-learning/'}
+          // { text: 'No Code'                 , link: '/nocode/'}
         ] 
       },
       {
@@ -55,7 +55,7 @@ module.exports = {
       '/resume/' :  getSideBar("resume", "Resume"),
       '/software/' :  getSideBar("software", "Software"),
       '/machine-learning/' : getSideBar("machine-learning", "Machine Learning"),
-      '/nocode/': getSideBar("nocode", "No Code"),
+      // '/nocode/': getSideBar("nocode", "No Code"),
     },    
   },
 
@@ -65,6 +65,7 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    ['@vuepress/plugin-google-analytics', { ga: 'G-YL1YJRWKPY' }],
     // [
     //   "vuepress-plugin-mailchimp",
     //   {

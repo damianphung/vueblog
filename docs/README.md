@@ -6,7 +6,6 @@ tagline: ""
 # actionLink: "/resume/"
 footer: Made with ❤️
 ---
-
 <div class="features">
     <div class="feature">
         <a href="/software/">Software</a>
@@ -14,7 +13,7 @@ footer: Made with ❤️
     <div class="feature">
         <a href="/machine-learning/">Machine Learning</a>
     </div>
-    <div class="feature">
+    <!-- <div class="feature">
         <a href="/nocode/">No Code / Low code</a>
-    </div>    
+    </div>     -->
 </div>
