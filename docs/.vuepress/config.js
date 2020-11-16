@@ -65,7 +65,7 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-    ['@vuepress/plugin-google-analytics', { ga: 'G-YL1YJRWKPY' }],
+    ['minimal-analytics', { ga: 'G-YL1YJRWKPY' }],
     // [
     //   "vuepress-plugin-mailchimp",
     //   {
