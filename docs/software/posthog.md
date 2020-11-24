@@ -2,7 +2,6 @@
 title: PostHog
 date: 2020-11-23 11:00:00 +0000
 description: Product analytics
-
 ---
 ## Background
 
@@ -50,7 +49,7 @@ The most interesting feature is Feature Flags.
 
 The ability to do A/B testing based on a user segment, and being able to roll back is quite nifty. See this blog post from PostHog themselves for details.
 
-[https://posthog.com/docs/tutorials/feature-flags](https://posthog.com/docs/tutorials/feature-flags "https://posthog.com/docs/tutorials/feature-flags")
+[Feature flags blog post](https://posthog.com/docs/tutorials/feature-flags)
 
 ## The not so good.
 
