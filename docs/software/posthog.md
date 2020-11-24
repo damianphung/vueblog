@@ -10,7 +10,7 @@ For those not familiar with PostHog, PostHog is an open source product analytics
 
 You get to see graphs and charts and ask questions about feature engagement and product usage of your website.
 
-There are existing solutions such as [https://mixpanel.com/](https://mixpanel.com/ "Mixpanel") and [https://amplitude.com/](https://amplitude.com/ "Amplitude"), and of course Google Analytics.
+There are existing solutions such as [Mixpanel](https://mixpanel.com/) and [Amplitude](https://amplitude.com/), and of course Google Analytics.
 
 One unique feature about PostHog is the ability to self-host. You easily do this yourself and deploy on Heroku. Alternatively PostHog also offers a free tier on their hosted solution.
 
@@ -20,7 +20,7 @@ If you don't feel comfortable sending data to third party tools, you control the
 
 A quick product tour...
 
-Once you sign up, you will be given a snippet of javascript code that you will paste in the <head> section of your webpage.
+Once you sign up, you will be given a snippet of javascript code that you will paste in the 'head' section of your webpage.
 
 Paste it and then verify it - Thats it, PostHog has been integrated!.
 
