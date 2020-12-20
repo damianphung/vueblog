@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: "/uploads/2d7ee2f4-69c3-4cdb-ae11-b168d57344b2.jpeg"
+heroImage: "/uploads/me.png"
 tagline: ""
 # actionText: Resume →
 # actionLink: "/resume/"
